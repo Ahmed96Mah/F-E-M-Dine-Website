@@ -54,7 +54,7 @@ const Home = () => {
         </Link>
       </header>
       <main>
-        <section className="flex flex-col items-center px-6 -mt-16 mb-25 md:-mt-22 md:z-20 xl:-mt-56 xl:px-41 xl:flex-row xl:justify-between">
+        <div className="flex flex-col items-center px-6 -mt-16 mb-25 md:-mt-22 md:z-20 xl:-mt-56 xl:px-41 xl:flex-row xl:justify-between">
           <img
             src={enjoyablePlaceMob}
             alt="an enjoyable place"
@@ -91,8 +91,8 @@ const Home = () => {
               meal.
             </p>
           </section>
-        </section>
-        <section className="mb-25 px-6 flex flex-col items-center z-10 xl:px-41 xl:flex-row-reverse xl:justify-between xl:-mb-20">
+        </div>
+        <div className="mb-25 px-6 flex flex-col items-center z-10 xl:px-41 xl:flex-row-reverse xl:justify-between xl:-mb-20">
           <img
             src={locallySourcedMob}
             alt="locally sourced food"
@@ -129,8 +129,8 @@ const Home = () => {
             alt=""
             className="hidden md:block md:z-20 md:absolute md:mt-110 md:left-1/2 md:h-80 md:w-1/2 xl:left-1/3 xl:mt-32 xl:w-8/12"
           />
-        </section>
-        <section className="bg-cod-gray px-6 pt-18 flex flex-col items-center md:pt-24 md:px-24 xl:flex-row xl:items-start xl:px-41 xl:pt-50">
+        </div>
+        <div className="bg-cod-gray px-6 pt-18 flex flex-col items-center md:pt-24 md:px-24 xl:flex-row xl:items-start xl:px-41 xl:pt-50">
           <section className="flex flex-col items-center mb-22 md:mb-6 xl:items-start xl:w-175">
             <img src={divider} alt="" className="xl:-mt-4 xl:mb-4" />
             <h2 className="text-2xl text-white text-center mt-9 mb-4 md:mb-8 md:text-3xl md:px-13 xl:text-3xl xl:text-left xl:pl-0">
@@ -141,8 +141,8 @@ const Home = () => {
               some of our diner's favourites. Our menu is revamped every season.
             </p>
           </section>
-          <section className="flex flex-col items-center">
-            <section className="md:flex md:flex-row md:justify-left md:items-center">
+          <div className="flex flex-col items-center">
+            <div className="md:flex md:flex-row md:justify-left md:items-center">
               <img
                 src={salmonMob}
                 alt="seared salmon fillet"
@@ -162,8 +162,8 @@ const Home = () => {
                   summer salad.
                 </p>
               </section>
-            </section>
-            <section className="border-y-1 border-white/20 pt-6 md:flex md:pt-0 md:flex-row md:justify-left md:items-center md:border-y-1">
+            </div>
+            <div className="border-y-1 border-white/20 pt-6 md:flex md:pt-0 md:flex-row md:justify-left md:items-center md:border-y-1">
               <img
                 src={beefMob}
                 alt="rosemary fillet mignon"
@@ -179,8 +179,8 @@ const Home = () => {
                   seasonal sides.
                 </p>
               </section>
-            </section>
-            <section className="pt-6 md:pt-0 md:mb-20 md:flex md:flex-row md:justify-left md:items-center xl:mb-24">
+            </div>
+            <div className="pt-6 md:pt-0 md:mb-20 md:flex md:flex-row md:justify-left md:items-center xl:mb-24">
               <img
                 src={chocolateMob}
                 alt="fruit chocolate mousse"
@@ -200,9 +200,9 @@ const Home = () => {
                   shavings.
                 </p>
               </section>
-            </section>
-          </section>
-        </section>
+            </div>
+          </div>
+        </div>
         <section className="px-6 mt-20 flex flex-col items-center md:mt-29 xl:flex-row xl:items-center xl:px-41">
           <img
             src={topRightCurve}
@@ -215,7 +215,7 @@ const Home = () => {
             className="hidden md:block md:absolute md:h-20 md:z-20 md:left-10 md:-mt-10 xl:-mt-[310px]"
           />
           {section === 'FAMILY GATHERING' && (
-            <section className="flex flex-row justify-center md:mb-14 xl:mr-31">
+            <div className="flex flex-row justify-center md:mb-14 xl:mr-31">
               <img
                 src={familyGatheringMob}
                 alt="family gathered"
@@ -231,10 +231,10 @@ const Home = () => {
                 alt="family gathered"
                 className="hidden xl:block xl:w-135"
               />
-            </section>
+            </div>
           )}
           {section === 'SPECIAL EVENTS' && (
-            <section className="flex flex-row justify-center md:mb-14 xl:mr-31">
+            <div className="flex flex-row justify-center md:mb-14 xl:mr-31">
               <img
                 src={specialEventMob}
                 alt="special events"
@@ -250,10 +250,10 @@ const Home = () => {
                 alt="special events"
                 className="hidden xl:block xl:w-135"
               />
-            </section>
+            </div>
           )}
           {section === 'SOCIAL EVENTS' && (
-            <section className="flex flex-row justify-center md:mb-14 xl:mr-31">
+            <div className="flex flex-row justify-center md:mb-14 xl:mr-31">
               <img
                 src={socialEventMob}
                 alt="social events"
@@ -269,10 +269,10 @@ const Home = () => {
                 alt="social events"
                 className="hidden xl:block xl:w-135"
               />
-            </section>
+            </div>
           )}
           <section className="flex flex-col items-center xl:flex-col-reverse xl:w-111">
-            <section className="flex flex-col items-center mb-6 md:mb-12 md:flex-row md:justify-between md:w-11/12 xl:flex-col xl:items-start">
+            <div className="flex flex-col items-center mb-6 md:mb-12 md:flex-row md:justify-between md:w-11/12 xl:flex-col xl:items-start">
               <button
                 className={
                   section === 'FAMILY GATHERING'
@@ -309,7 +309,7 @@ const Home = () => {
               >
                 SOCIAL EVENTS
               </button>
-            </section>
+            </div>
             {section === 'FAMILY GATHERING' && (
               <section className="flex flex-col items-center mb-31 xl:items-start">
                 <h2 className="text-2xl mb-4 md:mb-6 md:text-3xl">
@@ -366,7 +366,7 @@ const Home = () => {
             )}
           </section>
         </section>
-        <section className="h-82 pt-21 bg-readyHomeMob bg-no-repeat bg-cover flex flex-col items-center md:bg-readyHomeTab xl:flex-row xl:justify-between xl:px-41 xl:bg-readyHomeDesk xl:bg-cover xl:h-60 xl:py-22">
+        <div className="h-82 pt-21 bg-readyHomeMob bg-no-repeat bg-cover flex flex-col items-center md:bg-readyHomeTab xl:flex-row xl:justify-between xl:px-41 xl:bg-readyHomeDesk xl:bg-cover xl:h-60 xl:py-22">
           <p className="text-2xl text-white text-center mb-5 md:mb-6 md:text-3xl xl:mb-0">
             Ready to make a reservation?
           </p>
@@ -376,22 +376,22 @@ const Home = () => {
           >
             BOOK A TABLE
           </Link>
-        </section>
+        </div>
       </main>
       <footer className="bg-cod-gray flex flex-col items-center py-19 xl:px-41 xl:flex-row xl:items-start">
         <img src={logo} alt="Dine's logo" className="w-26 mb-10 xl:mr-48" />
-        <section className="text-sm text-white xl:w-full xl:flex xl:flex-row xl:justify-start xl:items-center">
-          <section className="flex flex-col items-center mb-8 xl:items-start xl:mr-45 xl:mb-0">
+        <div className="text-sm text-white xl:w-full xl:flex xl:flex-row xl:justify-start xl:items-center">
+          <div className="flex flex-col items-center mb-8 xl:items-start xl:mr-45 xl:mb-0">
             <span>MARTHWAITE, SEDBERGH</span>
             <span>CUMBRIA</span>
             <span>+00 44 123 4567</span>
-          </section>
-          <section className="flex flex-col items-center xl:items-start">
+          </div>
+          <div className="flex flex-col items-center xl:items-start">
             <span>OPEN TIMES</span>
             <span>MON - FRI: 09:00 AM - 10:00 PM</span>
             <span>SAT - SUN: 09:00 AM - 11:30 PM</span>
-          </section>
-        </section>
+          </div>
+        </div>
       </footer>
     </div>
   );
