@@ -105,8 +105,8 @@ const Booking = () => {
           <p className="hidden mt-3 text-error text-xs peer-invalid/email:block">
             This field is required
           </p>
-          <section className="flex flex-col-reverse items-left md:flex-row-reverse md:justify-between md:mt-4">
-            <section className="flex flex-row justify-between">
+          <div className="flex flex-col-reverse items-left md:flex-row-reverse md:justify-between md:mt-4">
+            <div className="flex flex-row justify-between">
               <input
                 required
                 min="1"
@@ -142,8 +142,8 @@ const Booking = () => {
                 placeholder="YYYY"
                 className="text-xl-light pb-4 pl-4 w-22 border-b-1 border-shuttle-gray invalid:placeholder-error/50 invalid:border-error"
               />
-            </section>
-            <section className="text-xl-light pt-7 pb-3">
+            </div>
+            <div className="text-xl-light pt-7 pb-3">
               <label>Pick a date</label>
               <p
                 className={
@@ -154,8 +154,8 @@ const Booking = () => {
               >
                 This field is incomplete
               </p>
-            </section>
-          </section>
+            </div>
+          </div>
           <section className="flex flex-col items-left md:flex-row md:justify-between md:items-center md:mt-4">
             <section className="text-xl-light pt-7 pb-3">
               <label>Pick a time</label>
