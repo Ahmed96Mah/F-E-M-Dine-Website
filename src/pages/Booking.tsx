@@ -94,7 +94,7 @@ const Booking = () => {
           </p>
           <input
             required
-            type="text"
+            type="email"
             value={email}
             onChange={(e) => {
               setEmail(e.target.value!);
