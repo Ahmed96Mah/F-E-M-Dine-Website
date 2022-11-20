@@ -203,7 +203,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <section className="px-6 mt-20 flex flex-col items-center md:mt-29 xl:flex-row xl:items-center xl:px-41">
+        <div className="px-6 mt-20 flex flex-col items-center md:mt-29 xl:flex-row xl:items-center xl:px-41">
           <img
             src={topRightCurve}
             alt=""
@@ -271,7 +271,7 @@ const Home = () => {
               />
             </div>
           )}
-          <section className="flex flex-col items-center xl:flex-col-reverse xl:w-111">
+          <div className="flex flex-col items-center xl:flex-col-reverse xl:w-111">
             <div className="flex flex-col items-center mb-6 md:mb-12 md:flex-row md:justify-between md:w-11/12 xl:flex-col xl:items-start">
               <button
                 className={
@@ -364,8 +364,8 @@ const Home = () => {
                 </Link>
               </section>
             )}
-          </section>
-        </section>
+          </div>
+        </div>
         <div className="h-82 pt-21 bg-readyHomeMob bg-no-repeat bg-cover flex flex-col items-center md:bg-readyHomeTab xl:flex-row xl:justify-between xl:px-41 xl:bg-readyHomeDesk xl:bg-cover xl:h-60 xl:py-22">
           <p className="text-2xl text-white text-center mb-5 md:mb-6 md:text-3xl xl:mb-0">
             Ready to make a reservation?
