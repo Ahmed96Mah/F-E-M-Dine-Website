@@ -49,7 +49,11 @@ const Booking = () => {
     <div className="font-league-spartan">
       <header className="h-150 bg-heroBookingMob bg-cover bg-no-repeat flex flex-col items-center px-6 pt-16 md:px-8 md:bg-heroBookingTab xl:px-41 xl:items-start xl:bg-heroBookingDesk">
         <div className="w-full flex flex-col items-center md:flex-row md:items-start">
-          <img src={logo} alt="Dine's logo" className="w-21 mb-11 md:w-26 xl:mb-38" />
+          <img
+            src={logo}
+            alt="Dine's logo"
+            className="w-21 mb-11 md:w-26 xl:mb-38"
+          />
         </div>
         <h1 className="text-2xl font-light text-white mb-3 md:text-5xl md:leading-[64px] md:tracking-[-0.6px] xl:text-4xl">
           Reservations
@@ -281,7 +285,11 @@ const Booking = () => {
         />
       </main>
       <footer className="bg-cod-gray flex flex-col items-center py-19 md:px-8 md:flex-row md:justify-start md:items-start xl:px-41">
-        <img src={logo} alt="Dine's logo" className="w-26 mb-10 md:w-26 md:mr-31 xl:mr-48" />
+        <img
+          src={logo}
+          alt="Dine's logo"
+          className="w-26 mb-10 md:w-26 md:mr-31 xl:mr-48"
+        />
         <section className="text-sm text-white xl:flex xl:flex-row xl:justify-between ">
           <section className="flex flex-col items-center mb-8 md:items-start xl:mr-45">
             <span>MARTHWAITE, SEDBERGH</span>

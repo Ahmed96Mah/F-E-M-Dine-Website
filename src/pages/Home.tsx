@@ -169,7 +169,11 @@ const Home = () => {
                 alt="rosemary fillet mignon"
                 className="md:hidden"
               />
-              <img src={beefImg} alt="rosemary fillet mignon" className="hidden md:block md:w-32" />
+              <img
+                src={beefImg}
+                alt="rosemary fillet mignon"
+                className="hidden md:block md:w-32"
+              />
               <section className="flex flex-col items-center mb-7 md:mb-4 md:items-start md:ml-16 md:before:content-[''] md:before:border-b-1 md:before:block md:before:w-8 md:before:absolute md:before:-ml-16 md:before:mt-10 md:before:border-beaver">
                 <h2 className="text-xl text-white text-center mt-9 mb-4">
                   Rosemary Filet Mignon
