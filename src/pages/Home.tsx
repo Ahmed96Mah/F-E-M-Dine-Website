@@ -382,19 +382,44 @@ const Home = () => {
           </Link>
         </div>
       </main>
-      <footer className="bg-cod-gray flex flex-col items-center py-19 xl:px-41 xl:flex-row xl:items-start">
-        <img src={logo} alt="Dine's logo" className="w-26 mb-10 xl:mr-48" />
-        <div className="text-sm text-white xl:w-full xl:flex xl:flex-row xl:justify-start xl:items-center">
-          <div className="flex flex-col items-center mb-8 xl:items-start xl:mr-45 xl:mb-0">
-            <span>MARTHWAITE, SEDBERGH</span>
-            <span>CUMBRIA</span>
-            <span>+00 44 123 4567</span>
+      <footer className="bg-cod-gray flex flex-col items-center py-19 xl:px-41">
+        <div className="flex flex-col items-center xl:flex-row xl:items-start">
+          <img src={logo} alt="Dine's logo" className="w-26 mb-10 xl:mr-48" />
+          <div className="text-sm text-white xl:w-full xl:flex xl:flex-row xl:justify-start xl:items-center">
+            <div className="flex flex-col items-center mb-8 xl:items-start xl:mr-45 xl:mb-0">
+              <span>MARTHWAITE, SEDBERGH</span>
+              <span>CUMBRIA</span>
+              <span>+00 44 123 4567</span>
+            </div>
+            <div className="flex flex-col items-center xl:items-start">
+              <span>OPEN TIMES</span>
+              <span>MON - FRI: 09:00 AM - 10:00 PM</span>
+              <span>SAT - SUN: 09:00 AM - 11:30 PM</span>
+            </div>
           </div>
-          <div className="flex flex-col items-center xl:items-start">
-            <span>OPEN TIMES</span>
-            <span>MON - FRI: 09:00 AM - 10:00 PM</span>
-            <span>SAT - SUN: 09:00 AM - 11:30 PM</span>
-          </div>
+        </div>
+        <div>
+          <p className="text-center text-sm text-white mt-6 mx-2">
+            Challenge by
+            <a
+              className="text-sky-300 ml-1"
+              href="https://www.frontendmentor.io?ref=challenge"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Frontend Mentor
+            </a>
+            . Coded by
+            <a
+              className="text-sky-300 ml-1"
+              href="https://www.frontendmentor.io/profile/Ahmed96Mah"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Ahmed Mahmoud Abdalwahab
+            </a>
+            .
+          </p>
         </div>
       </footer>
     </div>

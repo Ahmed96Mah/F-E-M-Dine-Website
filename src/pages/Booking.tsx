@@ -284,24 +284,49 @@ const Booking = () => {
           className="hidden xl:block xl:absolute xl:right-1/2 xl:-mt-24 xl:z-10"
         />
       </main>
-      <footer className="bg-cod-gray flex flex-col items-center py-19 md:px-8 md:flex-row md:justify-start md:items-start xl:px-41">
-        <img
-          src={logo}
-          alt="Dine's logo"
-          className="w-26 mb-10 md:w-26 md:mr-31 xl:mr-48"
-        />
-        <section className="text-sm text-white xl:flex xl:flex-row xl:justify-between ">
-          <section className="flex flex-col items-center mb-8 md:items-start xl:mr-45">
-            <span>MARTHWAITE, SEDBERGH</span>
-            <span>CUMBRIA</span>
-            <span>+00 44 123 4567</span>
+      <footer className="bg-cod-gray flex flex-col items-center md:items-start py-19 md:px-8 xl:px-41">
+        <div className="flex flex-col items-center md:items-start md:flex-row md:justify-start md:items-start">
+          <img
+            src={logo}
+            alt="Dine's logo"
+            className="w-26 mb-10 md:w-26 md:mr-31 xl:mr-48"
+          />
+          <section className="text-sm text-white xl:flex xl:flex-row xl:justify-between ">
+            <section className="flex flex-col items-center mb-8 md:items-start xl:mr-45">
+              <span>MARTHWAITE, SEDBERGH</span>
+              <span>CUMBRIA</span>
+              <span>+00 44 123 4567</span>
+            </section>
+            <section className="flex flex-col items-center md:items-start">
+              <span>OPEN TIMES</span>
+              <span>MON - FRI: 09:00 AM - 10:00 PM</span>
+              <span>SAT - SUN: 09:00 AM - 11:30 PM</span>
+            </section>
           </section>
-          <section className="flex flex-col items-center md:items-start">
-            <span>OPEN TIMES</span>
-            <span>MON - FRI: 09:00 AM - 10:00 PM</span>
-            <span>SAT - SUN: 09:00 AM - 11:30 PM</span>
-          </section>
-        </section>
+        </div>
+        <div>
+          <p className="text-center text-sm text-white mt-6 mx-2">
+            Challenge by
+            <a
+              className="text-sky-300 ml-1"
+              href="https://www.frontendmentor.io?ref=challenge"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Frontend Mentor
+            </a>
+            . Coded by
+            <a
+              className="text-sky-300 ml-1"
+              href="https://www.frontendmentor.io/profile/Ahmed96Mah"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Ahmed Mahmoud Abdalwahab
+            </a>
+            .
+          </p>
+        </div>
       </footer>
     </div>
   );
