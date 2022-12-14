@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/F-E-M-Dine-Website/static/css/main.66045c29.css",
-    "main.js": "/F-E-M-Dine-Website/static/js/main.4e33f653.js",
+    "main.css": "/F-E-M-Dine-Website/static/css/main.ae2520da.css",
+    "main.js": "/F-E-M-Dine-Website/static/js/main.5b1e572a.js",
     "static/media/enjoyable-place-desktop@2x.jpg": "/F-E-M-Dine-Website/static/media/enjoyable-place-desktop@2x.7db677c38aa29ae27f36.jpg",
     "static/media/enjoyable-place-tablet@2x.jpg": "/F-E-M-Dine-Website/static/media/enjoyable-place-tablet@2x.d7d64f09d1e4013d7ca3.jpg",
     "static/media/hero-bg-desktop@2x.jpg": "/F-E-M-Dine-Website/static/media/hero-bg-desktop@2x.eb3018c2e6e91c6ac813.jpg",
@@ -40,11 +40,11 @@
     "static/media/icon-check.svg": "/F-E-M-Dine-Website/static/media/icon-check.4c96871bb2a6f92bce9240d148c5f940.svg",
     "static/media/icon-arrow.svg": "/F-E-M-Dine-Website/static/media/icon-arrow.0504e5dcf07c2adf8e1e562d2ad53919.svg",
     "static/media/icon-minus.svg": "/F-E-M-Dine-Website/static/media/icon-minus.a1f316e703a5cea62cb6cc8823797a0a.svg",
-    "main.66045c29.css.map": "/F-E-M-Dine-Website/static/css/main.66045c29.css.map",
-    "main.4e33f653.js.map": "/F-E-M-Dine-Website/static/js/main.4e33f653.js.map"
+    "main.ae2520da.css.map": "/F-E-M-Dine-Website/static/css/main.ae2520da.css.map",
+    "main.5b1e572a.js.map": "/F-E-M-Dine-Website/static/js/main.5b1e572a.js.map"
   },
   "entrypoints": [
-    "static/css/main.66045c29.css",
-    "static/js/main.4e33f653.js"
+    "static/css/main.ae2520da.css",
+    "static/js/main.5b1e572a.js"
   ]
 }
