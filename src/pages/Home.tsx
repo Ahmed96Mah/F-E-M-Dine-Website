@@ -37,12 +37,12 @@ const Home = () => {
 
   return (
     <div className="font-league-spartan">
-      <header className="h-187 pt-57 px-6 flex flex-col items-center bg-heroHomeMob bg-no-repeat bg-cover md:h-248 md:px-[100px] md:pt-93 md:bg-heroHomeTab xl:pt-16 xl:px-41 xl:bg-heroHomeDesk xl:bg-contain xl:items-start">
+      <header className="h-187 pt-57 px-6 flex flex-col items-center bg-heroHomeMob bg-no-repeat bg-cover md:h-248 md:px-[100px] md:pt-93 md:bg-heroHomeTab xl:pt-16 xl:px-41 xl:bg-heroHomeDesk xl:bg-contain xl:items-start 3xl:bg-cover">
         <img src={logo} alt="Dine's logo" className="w-21 md:w-26" />
-        <h1 className="text-2xl text-white text-center font-light px-8 pt-9 pb-6 md:px-22 md:text-3xl md:leading-[64px] md:font-light md:tracking-[-0.6px] xl:mt-38 xl:text-4xl xl:pl-0 xl:text-left xl:w-2/3">
+        <h1 className="text-2xl text-white text-center font-light px-8 pt-9 pb-6 md:px-22 md:text-3xl md:leading-[64px] md:font-light md:tracking-[-0.6px] xl:mt-38 xl:text-4xl xl:px-0 xl:text-left xl:w-1/2">
           Exquisite dining since 1989
         </h1>
-        <p className="text-base text-center text-white pb-13 md:text-xl-light xl:text-left xl:w-6/12">
+        <p className="text-base text-center text-white pb-13 md:text-xl-light xl:text-left xl:w-[35%]">
           Experience our seasonal menu in beautiful country surroundings. Eat
           the freshest produce from the comfort of our farmhouse.
         </p>
@@ -58,17 +58,17 @@ const Home = () => {
           <img
             src={enjoyablePlaceMob}
             alt="an enjoyable place"
-            className="mb-12 md:hidden"
+            className="mb-12 md:hidden shadow-3xl"
           />
           <img
             src={enjoyablePlaceTab}
             alt="an enjoyable place"
-            className="hidden md:block mb-12 w-9/12 xl:hidden"
+            className="hidden md:block mb-12 w-9/12 xl:hidden md:shadow-3xl"
           />
           <img
             src={enjoyablePlaceDesk}
             alt="an enjoyable place"
-            className="hidden xl:block xl:w-135"
+            className="hidden xl:block xl:w-135 xl:shadow-3xl"
           />
           <img
             src={bottomRightCurve}
@@ -78,14 +78,14 @@ const Home = () => {
           <img
             src={topRightCurve}
             alt=""
-            className="hidden md:h-80 xl:block md:z-0 md:absolute md:right-1/2 md:mt-16 md:w-full xl:right-1/3"
+            className="hidden md:h-80 md:z-0 md:absolute md:right-1/2 md:mt-16 md:w-full xl:block xl:right-1/3 xl:w-3/5 xl:left-0 xl:mt-48"
           />
           <section className="flex flex-col items-center xl:items-start xl:ml-31">
             <img src={divider} alt="" />
-            <h2 className="text-center text-2xl mt-9 mb-4 px-10 md:mb-7 md:px-45 md:text-3xl xl:pl-0 xl:pr-16 xl:text-left">
+            <h2 className="text-center text-2xl mt-12 mb-4 px-10 md:mb-7 md:px-45 md:text-3xl xl:pl-0 xl:pr-26 xl:text-left">
               Enjoyable place for all the family
             </h2>
-            <p className="text-center text-base md:text-xl-light md:px-33 xl:pl-0 xl:pr-0 xl:text-left">
+            <p className="text-center text-base md:text-xl-light md:px-33 xl:pl-0 xl:pr-18 xl:text-left">
               Our relaxed surroundings make dining with us a great experience
               for everyone. We can even arrange a tour of the farm before your
               meal.
@@ -96,29 +96,29 @@ const Home = () => {
           <img
             src={locallySourcedMob}
             alt="locally sourced food"
-            className="mb-12 md:hidden"
+            className="mb-12 md:hidden shadow-3xl"
           />
           <img
             src={locallySourcedTab}
             alt="locally sourced food"
-            className="hidden mb-12 md:block w-9/12 md:mb-14 xl:hidden"
+            className="hidden mb-12 md:block w-9/12 md:mb-14 md:shadow-3xl xl:hidden"
           />
           <img
             src={locallySourcedDesk}
             alt="locally sourced food"
-            className="hidden xl:block xl:w-135"
+            className="hidden xl:block xl:w-135 md:z-10"
           />
           <img
             src={lines}
             alt=""
-            className="hidden md:block md:h-20 md:z-20 md:absolute md:right-14 md:mt-52 xl:-mt-8"
+            className="hidden md:block md:h-20 md:z-20 md:absolute md:right-14 md:mt-52 xl:-mt-44"
           />
           <section className="flex flex-col items-center xl:items-start xl:mr-31">
             <img src={divider} alt="" />
-            <h2 className="text-center text-2xl mt-9 mb-4 px-10 md:mt-10 md:mb-8 md:px-45 md:text-3xl xl:pl-0 xl:pr-16 xl:text-left">
+            <h2 className="text-center text-2xl mt-12 mb-4 px-10 md:mt-10 md:mb-8 md:px-45 md:text-3xl xl:pl-0 xl:pr-26 xl:text-left">
               The most locally sourced food
             </h2>
-            <p className="text-center text-base md:text-xl-light md:px-33 xl:pl-0 xl:pr-8 xl:text-left">
+            <p className="text-center text-base md:text-xl-light md:px-33 xl:pl-0 xl:pr-22 xl:text-left">
               All our ingredients come directly from our farm or local fishery.
               So you can be sure that you're eating the freshest, most
               sustainable food.
@@ -127,16 +127,16 @@ const Home = () => {
           <img
             src={topLeftCurve}
             alt=""
-            className="hidden md:block md:z-20 md:absolute md:mt-110 md:left-1/2 md:h-80 md:w-1/2 xl:left-1/3 xl:mt-32 xl:w-8/12"
+            className="hidden md:block md:z-0 md:absolute md:mt-110 md:left-1/2 md:h-80 md:w-1/2 xl:left-1/3 xl:mt-32 xl:w-8/12"
           />
         </div>
-        <div className="bg-cod-gray px-6 pt-18 flex flex-col items-center md:pt-24 md:px-24 xl:flex-row xl:items-start xl:px-41 xl:pt-50">
+        <div className="bg-cod-gray px-6 pt-18 flex flex-col items-center md:pt-24 md:px-24 xl:flex-row xl:justify-between xl:items-start xl:px-41 xl:pt-50">
           <section className="flex flex-col items-center mb-22 md:mb-6 xl:items-start xl:w-175">
             <img src={divider} alt="" className="xl:-mt-4 xl:mb-4" />
-            <h2 className="text-2xl text-white text-center mt-9 mb-4 md:mb-8 md:text-3xl md:px-13 xl:text-3xl xl:text-left xl:pl-0">
+            <h2 className="text-2xl text-white text-center mt-9 mb-4 md:mb-8 md:text-3xl md:px-13 xl:text-3xl xl:text-left xl:pl-0 xl:pr-32">
               A few highlights from our menu
             </h2>
-            <p className="text-base text-white text-center px-1 md:text-xl-light md:px-13 xl:text-xl-light xl:text-left xl:pl-0 xl:pr-18">
+            <p className="text-base text-white text-center px-1 md:text-xl-light md:px-13 xl:text-xl-light xl:text-left xl:pl-0 xl:pr-36">
               We cater for all dietary requirements, but here's a glimpse at
               some of our diner's favourites. Our menu is revamped every season.
             </p>
@@ -154,7 +154,7 @@ const Home = () => {
                 className="hidden md:block md:w-32"
               />
               <section className="flex flex-col items-center mb-14 md:mb-4 md:items-start md:ml-16 md:before:content-[''] md:before:border-b-1 md:before:block md:before:w-8 md:before:absolute md:before:-ml-16 md:before:mt-10 md:before:border-beaver">
-                <h2 className="text-xl text-white text-center mt-9 mb-4">
+                <h2 className="text-xl text-white text-center mt-9 mb-4 xl:mb-2">
                   Seared Salmon Fillet
                 </h2>
                 <p className="text-base text-white text-center px-7 md:text-left md:px-0">
@@ -175,7 +175,7 @@ const Home = () => {
                 className="hidden md:block md:w-32"
               />
               <section className="flex flex-col items-center mb-7 md:mb-4 md:items-start md:ml-16 md:before:content-[''] md:before:border-b-1 md:before:block md:before:w-8 md:before:absolute md:before:-ml-16 md:before:mt-10 md:before:border-beaver">
-                <h2 className="text-xl text-white text-center mt-9 mb-4">
+                <h2 className="text-xl text-white text-center mt-9 mb-4 xl:mb-2">
                   Rosemary Filet Mignon
                 </h2>
                 <p className="text-base text-white text-center px-8 md:text-left md:px-0">
@@ -196,7 +196,7 @@ const Home = () => {
                 className="hidden md:block md:w-32"
               />
               <section className="flex flex-col items-center mb-7 md:mb-4 md:items-start md:ml-16 md:before:content-[''] md:before:border-b-1 md:before:block md:before:w-8 md:before:absolute md:before:-ml-16 md:before:mt-10 md:before:border-beaver">
-                <h2 className="text-xl text-white text-center mt-9 mb-4">
+                <h2 className="text-xl text-white text-center mt-9 mb-4 xl:mb-2">
                   Summer Fruit Chocolate Mousse
                 </h2>
                 <p className="text-base text-white text-center px-8 mb-25 md:mb-0 md:text-left md:px-0">
@@ -207,33 +207,33 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="px-6 mt-20 flex flex-col items-center md:mt-29 xl:flex-row xl:items-center xl:px-41">
+        <div className="px-6 mt-20 flex flex-col items-center md:mt-29 xl:flex-row xl:items-start xl:my-36 xl:px-41">
           <img
             src={topRightCurve}
             alt=""
-            className="hidden md:block md:absolute md:w-full md:h-80 md:right-1/2 md:-mt-28 md:z-0 xl:right-2/3 xl:-mt-[310px]"
+            className="hidden md:block md:absolute md:w-full md:h-80 md:right-1/2 md:-mt-28 md:z-0 xl:left-0 xl:w-2/6 xl:-mt-36"
           />
           <img
             src={lines}
             alt=""
-            className="hidden md:block md:absolute md:h-20 md:z-20 md:left-10 md:-mt-10 xl:-mt-[310px]"
+            className="hidden md:block md:absolute md:h-20 md:z-20 md:left-10 md:-mt-10 xl:-mt-10 xl:left-32"
           />
           {section === 'FAMILY GATHERING' && (
             <div className="flex flex-row justify-center md:mb-14 xl:mr-31">
               <img
                 src={familyGatheringMob}
                 alt="family gathered"
-                className="mb-12 md:hidden"
+                className="mb-12 md:hidden shadow-3xl"
               />
               <img
                 src={familyGatheringTab}
                 alt="family gathered"
-                className="hidden md:block md:w-4/5 md:z-10 xl:hidden"
+                className="hidden md:block md:w-4/5 md:z-10 md:shadow-3xl xl:hidden"
               />
               <img
                 src={familyGatheringDesk}
                 alt="family gathered"
-                className="hidden xl:block xl:w-135"
+                className="hidden xl:block xl:w-135 xl:shadow-3xl"
               />
             </div>
           )}
@@ -242,17 +242,17 @@ const Home = () => {
               <img
                 src={specialEventMob}
                 alt="special events"
-                className="mb-12 md:hidden"
+                className="mb-12 md:hidden shadow-3xl"
               />
               <img
                 src={specialEventTab}
                 alt="special events"
-                className="hidden md:block md:w-4/5 md:z-10 xl:hidden"
+                className="hidden md:block md:w-4/5 md:z-10 md:shadow-3xl xl:hidden"
               />
               <img
                 src={specialEventDesk}
                 alt="special events"
-                className="hidden xl:block xl:w-135"
+                className="hidden xl:block xl:w-135 xl:shadow-3xl"
               />
             </div>
           )}
@@ -261,17 +261,17 @@ const Home = () => {
               <img
                 src={socialEventMob}
                 alt="social events"
-                className="mb-12 md:hidden"
+                className="mb-12 md:hidden shadow-3xl"
               />
               <img
                 src={socialEventTab}
                 alt="social events"
-                className="hidden md:block md:w-4/5 md:z-10 xl:hidden"
+                className="hidden md:block md:w-4/5 md:z-10 md:shadow-3xl xl:hidden"
               />
               <img
                 src={socialEventDesk}
                 alt="social events"
-                className="hidden xl:block xl:w-135"
+                className="hidden xl:block xl:w-135 xl:shadow-3xl"
               />
             </div>
           )}
@@ -382,7 +382,7 @@ const Home = () => {
           </Link>
         </div>
       </main>
-      <footer className="bg-cod-gray flex flex-col items-center py-19 xl:px-41">
+      <footer className="bg-cod-gray flex flex-col items-center py-19 xl:px-41 xl:pb-8">
         <div className="flex flex-col items-center xl:flex-row xl:items-start">
           <img src={logo} alt="Dine's logo" className="w-26 mb-10 xl:mr-48" />
           <div className="text-sm text-white xl:w-full xl:flex xl:flex-row xl:justify-start xl:items-center">
@@ -399,7 +399,7 @@ const Home = () => {
           </div>
         </div>
         <div>
-          <p className="text-center text-sm text-white mt-6 mx-2">
+          <p className="text-center text-sm text-white mt-6 mx-2 xl:mt-14">
             Challenge by
             <a
               className="text-sky-300 ml-1"
