@@ -150,6 +150,12 @@ module.exports = {
       borderWidth: {
         1: '1px',
       },
+      screens: {
+        '3xl': '1740px'
+      },
+      boxShadow: {
+        '3xl': '0 50px 55px -17px rgba(0, 0, 0, 0.25)',
+      }
     },
   },
   plugins: [],
