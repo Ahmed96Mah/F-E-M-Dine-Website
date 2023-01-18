@@ -39,10 +39,10 @@ const Home = () => {
     <div className="font-league-spartan">
       <header className="h-187 pt-57 px-6 flex flex-col items-center bg-heroHomeMob bg-no-repeat bg-cover sm:h-248 sm:px-[100px] sm:pt-93 lg:max-xl:pt-122 md:bg-heroHomeTab xl:pt-16 xl:px-41 xl:bg-heroHomeDesk xl:bg-contain xl:items-start 3xl:bg-cover">
         <img src={logo} alt="Dine's logo" className="w-21 sm:w-26" />
-        <h1 className="text-2xl text-white text-center font-light px-8 pt-9 pb-6 sm:px-16 md:px-22 sm:text-3xl sm:leading-[64px] sm:font-light sm:tracking-[-0.6px] xl:mt-38 xl:text-4xl xl:px-0 xl:text-left xl:w-1/2">
+        <h1 className="text-2xl text-white text-center font-light px-8 pt-9 pb-6 sm:px-16 md:px-22 sm:text-3xl sm:leading-[64px] sm:font-light sm:tracking-[-0.6px] xl:mt-38 xl:text-4xl xl:px-0 xl:text-left xl:w-3/5 2xl:w-1/2">
           Exquisite dining since 1989
         </h1>
-        <p className="text-base text-center text-white pb-13 sm:text-xl-light lg:max-xl:w-[70%] xl:text-left xl:w-[35%]">
+        <p className="text-base text-center text-white pb-13 sm:text-xl-light lg:max-xl:w-[70%] xl:text-left xl:w-[45%] 2xl:w-[35%]">
           Experience our seasonal menu in beautiful country surroundings. Eat
           the freshest produce from the comfort of our farmhouse.
         </p>
@@ -82,10 +82,10 @@ const Home = () => {
           />
           <section className="flex flex-col items-center xl:items-start xl:ml-31">
             <img src={divider} alt="" />
-            <h2 className="text-center text-2xl mt-12 mb-4 px-10 sm:mb-7 sm:px-22 sm:text-3xl md:px-45 xl:pl-0 xl:pr-26 xl:text-left">
+            <h2 className="text-center text-2xl mt-12 mb-4 px-10 sm:mb-7 sm:px-22 sm:text-3xl md:px-45 xl:px-0 xl:text-left 2xl:pr-45">
               Enjoyable place for all the family
             </h2>
-            <p className="text-center text-base sm:text-xl-light sm:px-22 md:px-33 lg:max-xl:w-[70%] xl:pl-0 xl:pr-18 xl:text-left">
+            <p className="text-center text-base sm:text-xl-light sm:px-22 md:px-33 lg:max-xl:w-[70%] xl:px-0 xl:text-left 2xl:pr-18">
               Our relaxed surroundings make dining with us a great experience
               for everyone. We can even arrange a tour of the farm before your
               meal.
@@ -115,10 +115,10 @@ const Home = () => {
           />
           <section className="flex flex-col items-center xl:items-start xl:mr-31">
             <img src={divider} alt="" />
-            <h2 className="text-center text-2xl mt-12 mb-4 px-10 sm:mt-10 sm:mb-8 sm:px-22 md:px-45 sm:text-3xl xl:pl-0 xl:pr-26 xl:text-left">
+            <h2 className="text-center text-2xl mt-12 mb-4 px-10 sm:mt-10 sm:mb-8 sm:px-22 md:px-45 sm:text-3xl xl:px-0 xl:text-left 2xl:pr-45">
               The most locally sourced food
             </h2>
-            <p className="text-center text-base sm:text-xl-light sm:px-22 md:px-33 lg:max-xl:w-[70%] xl:pl-0 xl:pr-22 xl:text-left">
+            <p className="text-center text-base sm:text-xl-light sm:px-22 md:px-33 lg:max-xl:w-[70%] xl:pl-0 xl:pr-0 xl:text-left 2xl:pr-22">
               All our ingredients come directly from our farm or local fishery.
               So you can be sure that you're eating the freshest, most
               sustainable food.
@@ -133,10 +133,10 @@ const Home = () => {
         <div className="bg-cod-gray px-6 pt-18 flex flex-col items-center sm:pt-24 sm:px-12 md:px-24 xl:flex-row xl:justify-between xl:items-start xl:px-41 xl:pt-50">
           <section className="flex flex-col items-center mb-22 sm:mb-6 xl:items-start xl:w-175">
             <img src={divider} alt="" className="xl:-mt-4 xl:mb-4" />
-            <h2 className="text-2xl text-white text-center mt-9 mb-4 sm:mb-8 sm:text-3xl sm:px-13 xl:text-3xl xl:text-left xl:pl-0 xl:pr-32">
+            <h2 className="text-2xl text-white text-center mt-9 mb-4 sm:mb-8 sm:text-3xl sm:px-13 xl:text-3xl xl:text-left xl:pl-0 xl:pr-10 2xl:pr-32">
               A few highlights from our menu
             </h2>
-            <p className="text-base text-white text-center px-1 sm:text-xl-light sm:px-13 lg:max-xl:w-[70%] xl:text-xl-light xl:text-left xl:pl-0 xl:pr-36">
+            <p className="text-base text-white text-center px-1 sm:text-xl-light sm:px-13 lg:max-xl:w-[70%] xl:text-xl-light xl:text-left xl:pl-0 xl:pr-20 2xl:pr-36">
               We cater for all dietary requirements, but here's a glimpse at
               some of our diner's favourites. Our menu is revamped every season.
             </p>
