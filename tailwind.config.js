@@ -122,6 +122,7 @@ module.exports = {
         50: '200px',
         57: '232px',
         93: '372px',
+        122: '490px',
       },
       width: {
         19: '76px',
@@ -151,11 +152,11 @@ module.exports = {
         1: '1px',
       },
       screens: {
-        '3xl': '1740px'
+        '3xl': '1740px',
       },
       boxShadow: {
         '3xl': '0 50px 55px -17px rgba(0, 0, 0, 0.25)',
-      }
+      },
     },
   },
   plugins: [],
