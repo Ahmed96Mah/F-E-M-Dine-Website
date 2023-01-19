@@ -29,7 +29,6 @@ const Booking = () => {
     const arrow = (e.target as HTMLElement).parentElement!.querySelector('img');
     arrow!.classList.toggle('pl-0');
     arrow!.classList.toggle('rotate-180');
-    arrow!.classList.toggle('pt-5');
     (e.target as HTMLElement)
       .parentElement!.parentElement!.querySelector('ul')!
       .classList.toggle('hidden');
@@ -47,7 +46,7 @@ const Booking = () => {
 
   return (
     <div className="font-league-spartan">
-      <header className="h-150 bg-heroBookingMob bg-cover bg-no-repeat flex flex-col items-center px-6 pt-16 md:px-8 md:bg-heroBookingTab xl:px-41 xl:items-start xl:bg-heroBookingDesk">
+      <header className="h-150 bg-heroBookingMob bg-cover bg-no-repeat flex flex-col items-center px-6 pt-16 sm:max-md:bg-heroBookingTab md:px-8 md:bg-heroBookingTab lg:max-xl:bg-heroBookingDesk lg:max-xl:px-14 xl:px-41 xl:items-start xl:bg-heroBookingDesk">
         <div className="w-full flex flex-col items-center md:flex-row md:items-start">
           <img
             src={logo}
@@ -58,7 +57,7 @@ const Booking = () => {
         <h1 className="text-2xl font-light text-white mb-3 md:text-5xl md:leading-[64px] md:tracking-[-0.6px] xl:text-4xl">
           Reservations
         </h1>
-        <p className="text-center text-white text-base mb-5 md:text-xl-light md:px-18 xl:text-left xl:pl-0 xl:w-135">
+        <p className="text-center text-white text-base mb-5 md:text-xl-light sm:px-18 lg:max-xl:w-3/4 xl:text-left xl:pl-0 xl:w-135">
           We can't wait to host you. If you have any special requirements please
           feel free to call on the phone number below. We'll be happy to
           accommodate you.
@@ -76,9 +75,9 @@ const Booking = () => {
           RESERVE PLACE
         </Link>
       </header>
-      <main className="px-6 md:px-8 xl:h-79 xl:px-0">
+      <main className="px-6 sm:px-28 md:px-8 xl:h-79 xl:px-0">
         <form
-          className="flex flex-col items-stretch p-8 shadow-2xl -mt-35 bg-white mb-21 md:-mt-58 md:mx-18 md:p-12 xl:w-135 xl:absolute xl:right-[100px] xl:-mt-85 xl:z-20"
+          className="flex flex-col items-stretch p-8 shadow-2xl -mt-35 bg-white mb-21 sm:p-12 md:-mt-58 md:mx-18 md:p-12 lg:max-xl:mx-auto lg:max-xl:w-3/5 xl:w-135 xl:absolute xl:right-[100px] xl:-mt-85 xl:z-20 xl:max-2xl:mx-0"
           onSubmit={
             handleSubmit as unknown as FormEventHandler<HTMLFormElement>
           }
@@ -126,7 +125,7 @@ const Booking = () => {
               <input
                 required
                 min="1"
-                max="7"
+                max="31"
                 type="number"
                 value={day}
                 onChange={(e) => {
@@ -151,7 +150,12 @@ const Booking = () => {
               <label>Pick a date</label>
               <p
                 className={
-                  month.length > 1 && day.length > 1 && year.length > 3
+                  month.length >= 1 &&
+                  day.length >= 1 &&
+                  year.length >= 4 &&
+                  parseInt(month) > 0 &&
+                  parseInt(day) > 0 &&
+                  parseInt(year) >= new Date().getFullYear()
                     ? 'hidden'
                     : 'block text-error text-xs'
                 }
@@ -165,7 +169,7 @@ const Booking = () => {
               <label>Pick a time</label>
               <p
                 className={
-                  hour.length > 1 && minutes.length > 1
+                  hour.length >= 1 && minutes.length >= 1
                     ? 'hidden'
                     : 'block text-error text-xs'
                 }
@@ -198,7 +202,7 @@ const Booking = () => {
                 placeholder="00"
                 className="text-xl-light pb-4 pl-4 w-19 border-b-1 border-shuttle-gray invalid:placeholder-error/50 invalid:border-error md:mr-4"
               />
-              <section className="pl-4 w-22 border-b-1 border-shuttle-gray invalid:placeholder-error/50 invalid:border-error">
+              <section className="pl-4 pb-4 w-22 border-b-1 border-shuttle-gray invalid:placeholder-error/50 invalid:border-error">
                 <section
                   className="cursor-pointer flex flex-row justify-between items-center"
                   onClick={
@@ -206,10 +210,10 @@ const Booking = () => {
                   }
                   tabIndex={0}
                 >
-                  <span className="text-xl-light pb-4 leading-7 font-normal">
+                  <span className="text-xl-light leading-7 font-normal">
                     {time}
                   </span>
-                  <img src={arrow} alt="" className="w-4 pb-4" />
+                  <img src={arrow} alt="" className="transition w-4" />
                 </section>
                 <ul className="absolute bg-white w-26 -ml-4 mt-2 py-4 hidden shadow-2xl">
                   <li
@@ -284,15 +288,15 @@ const Booking = () => {
           className="hidden xl:block xl:absolute xl:right-1/2 xl:-mt-24 xl:z-10"
         />
       </main>
-      <footer className="bg-cod-gray flex flex-col items-center md:items-start py-19 md:px-8 xl:px-41">
-        <div className="flex flex-col items-center md:items-start md:flex-row md:justify-start md:items-start">
+      <footer className="bg-cod-gray flex flex-col items-center md:items-start py-19 md:px-8 lg:max-xl:px-14 xl:px-41">
+        <div className="flex flex-col items-center md:flex-row md:items-start md:justify-start">
           <img
             src={logo}
             alt="Dine's logo"
             className="w-26 mb-10 md:w-26 md:mr-31 xl:mr-48"
           />
-          <section className="text-sm text-white xl:flex xl:flex-row xl:justify-between ">
-            <section className="flex flex-col items-center mb-8 md:items-start xl:mr-45">
+          <section className="text-sm text-white lg:flex lg:flex-row lg:justify-between ">
+            <section className="flex flex-col items-center mb-8 md:items-start lg:mr-32 xl:mr-45">
               <span>MARTHWAITE, SEDBERGH</span>
               <span>CUMBRIA</span>
               <span>+00 44 123 4567</span>
@@ -304,8 +308,8 @@ const Booking = () => {
             </section>
           </section>
         </div>
-        <div>
-          <p className="text-center text-sm text-white mt-6 mx-2">
+        <div className="md:w-full">
+          <p className="text-center text-sm text-white mt-6 mx-8 md:mx-0 md:w-full">
             Challenge by
             <a
               className="text-sky-300 ml-1"
